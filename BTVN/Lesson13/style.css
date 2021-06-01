@@ -1,0 +1,128 @@
+#all{
+    margin: auto;
+    width: 800px;
+    height: 600px;
+}
+
+#dong1{
+    width: 100%;
+    height: 6%;
+    background: red;
+}
+
+#dong2{
+    width: 88%;
+    height: 38%;
+    margin-left: 6%;
+}
+
+#dong3{
+    width: 88%;
+    height: 48%;
+    margin-left: 6%;    
+}
+
+#dong4{
+    width: 88%;
+    height: 6%;
+    margin-left: 6%;
+    background: blue;
+}
+
+#dong2cot1{
+    width: 75%;
+    height: 100%;
+    background: blue;
+    float: left;
+}
+
+#dong2cot2{
+    width: 25%;
+    height: 100%;
+    margin-left: auto;
+}
+
+#dong2cot2dong1{
+    width: 100%;
+    height: 60%;
+    background: green;
+}
+
+#dong2cot2dong2{
+    width: 100%;
+    height: 40%;
+    background: yellow;
+}
+
+#dong3cot1{
+    width: 47%;
+    height: 100%;
+    float: left;
+}
+
+#dong3cot1dong1{
+    width: 100%;
+    height: 60%;
+    background: green;
+}
+
+#dong3cot1dong2{
+    width: 100%;
+    height: 40%;
+}
+
+#dong3cot1dong2cot1{
+    width: 45%;
+    height: 100%;
+    background: #ffc5d1;
+    float: left;
+}
+
+#dong3cot1dong2cot2{
+    width: 55%;
+    height: 100%;
+    background: #ffa906;
+    margin-left: auto;
+}
+
+#dong3cot2{
+    width: 53%;
+    height: 100%;
+    margin-left: auto;
+}
+
+#dong3cot2dong1{
+    width: 100%;
+    height: 70%;
+}
+
+#dong3cot2dong1cot1{
+    width: 52.8%;
+    height: 100%;
+    background: red;
+    float: left;
+}
+
+#dong3cot2dong1cot2{
+    width: 47.2%;
+    height: 100%;
+    margin-left: auto;
+}
+
+#dong3cot2dong1cot2dong1{
+    width: 100%;
+    height: 40%;
+    background: #ffa906;
+}
+
+#dong3cot2dong1cot2dong2{
+    width: 100%;
+    height: 60%;
+    background: #058607;
+}
+
+#dong3cot2dong2{
+    width: 100%;
+    height: 30%;
+    background: #ffc5d1;
+}
