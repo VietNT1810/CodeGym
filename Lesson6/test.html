@@ -6,23 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    form {
+  width: 49.5em;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+fieldset {
+  display: block;
+  float: left;
+  width: 10em;
+  margin: 0 1em 0 0;
+  border: 1px solid #ccc;
+}
+  fieldset:last-child {
+  margin: 0;
+}
+
+fieldset > input,
+fieldset > label {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+fieldset > input {
+  width: 80%;
+  font-size: 1.4em;
+}
+</style>
 <body>
-    <center>
-        <table border="1" width="1000px" height="1000px">
-            <tr>
-                <td>
-                    <center>
-                        <table border="1" width="800px" height="800px">
-                            <tr>
-                                <td>
-    
-                                </td>
-                            </tr>
-                        </table>
-                    </center>
-                </td>
-            </tr>
-        </table>
-    </center>
+    <form action="" method="post">
+        <fieldset>
+          <input type="text" name="day" id="day" />
+          <label for="day">Day</label>
+        </fieldset>
+        <fieldset>
+          <input type="text" name="hour" id="hour" />
+          <label for="hour">Hour</label>
+        </fieldset>
+        <fieldset>
+        <input type="text" name="min" id="min" />
+          <label for="min">Min</label>
+        </fieldset>
+        <fieldset>
+          <input type="text" name="sec" id="sec" />
+          <label for="sec">Sec</label>
+        </fieldset>
+      </form>
 </body>
 </html>

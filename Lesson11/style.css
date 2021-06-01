@@ -1,0 +1,52 @@
+p{
+    text-align: center;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: blue;
+}
+
+table{
+    
+    border-collapse: collapse;
+    width: 686px;
+    border: 1px solid #D7D7D7;
+}
+
+td{
+    height: 32px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+}
+
+#vong{
+    height: 33px;
+    color: white;
+    background-color: #008000;
+}
+
+#title{
+    height: 49px;
+}
+
+#cot1{
+    width: 77px;
+}
+
+#cot2{
+    width: 260px
+}
+
+#cot3{
+    width: auto
+}
+
+#cot4{
+    width: 260px
+}
+
+.red{
+    color: red;
+}

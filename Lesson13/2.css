@@ -1,0 +1,41 @@
+#all{
+    width: 1000px;
+    height: 400px;
+}
+
+.dong{
+    width: 1000px;
+    height: 200px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+#red{
+    background: red;
+    float: left;
+}
+
+#yellow{
+    margin-left: 200px;
+    background: yellow;
+    float: left;
+}
+
+#green{
+    margin-left: 800px;
+    background: green;
+}
+
+#blue{
+    margin-left: 200px;
+    background: blue;
+    float: left;
+}
+
+#purple{
+    margin-left: 600px;
+    background: purple;
+}

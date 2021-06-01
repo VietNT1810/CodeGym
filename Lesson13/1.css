@@ -1,0 +1,25 @@
+.block{
+    background: #ccc;
+    width: 200px;
+    height: 200px;
+}
+
+#r1b1{
+    float: left;
+}
+
+#r1b2{
+    margin-left: 400px;
+}
+
+#r2b1{
+    margin-left: 200px;
+}
+
+#r3b1{
+    float: left;
+}
+
+#r3b2{
+    margin-left: 400px;
+}

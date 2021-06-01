@@ -1,0 +1,188 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+.content{
+    margin: 0 auto;
+    width: 960px;
+    height: 1367px;
+    border: 1px solid black;
+}
+
+.left{
+    float: left;
+    width: 660px;
+    padding: 20px;
+}
+
+.right{
+    float: right;
+    width: 260px;
+    height: 100%;
+    padding: 20px;
+}
+
+.message{
+    border: 1px solid;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    height: 37px;
+}
+
+.success{
+    border-color: #BFE6B9;
+    background-color: #E4FFE0;
+    color: #1D6B17;
+}
+
+.failure{
+    border-color: #D6A6B4;
+    background-color: #FFE3E7;
+    color: #96433B;
+}
+
+#close{
+    float: right;
+}
+
+h1{
+    padding: 5px 0;
+    margin: 20px 0 10px 0;
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p{
+    margin: 5px 0;
+    text-align: justify;
+}
+
+form h3{
+    color: #666;
+    margin: 5px 0 0;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 13.72px;
+}
+
+h3 label{
+    font-weight: bold;
+    font-size: 13.72px;
+}
+
+input{
+    margin-left: 5px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+#small, #large, #select {
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    background-color: #F7F2F6;
+}
+
+#small{
+    width: 171px;
+    height: 27px;
+}
+
+#large{
+    width: 384px;
+    height: 27px;
+}
+
+#select{
+    width: 155px;
+    height: 29px;
+}
+
+#submit{
+    margin-top: 25px;
+    width: 91px;
+    height: 34px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+h2{
+    font-size: 19px;
+    font-weight: bold;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#table{
+    border-collapse: collapse;
+    border: 1px solid #CCCCCC;
+    width: 100%;
+}
+
+tr{
+    height: 40px;
+}
+
+th{
+    text-align: unset;
+    padding: 7px 10px;
+    background-color: #DEEBFE;
+}
+
+td{
+    padding: 7px 10px;
+}
+
+td a{
+    text-decoration: none;
+    color: #0066CC;
+}
+
+#tablecolor{
+    background-color: #F0EBEF;
+}
+
+#quote{
+    padding-bottom: 30px;
+}
+
+ul{
+    list-style-image: url("./imgs/art.jpg");
+    padding-left: 30px;
+}
+
+.right h3{
+    width: 220px;
+    height: 47px;
+    padding: 10px;
+    background-color: #DEEBFE;
+    margin-top: 0;
+}
+
+.simplelink{
+    border-bottom: 1px solid #CCCCCC;
+    padding-top: 10px;
+}
+
+.simplelink img{
+    margin: 5px 10px;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.simplelink a{
+    vertical-align: top;
+    font-size: 15px;
+    color: #06C;
+}
