@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    width: 100%;
+    height: 70px;
+    background-color: pink;
+    list-style: none;
+    position: fixed;
+}
+
+li{
+    float: left;
+    line-height: 70px;
+    margin-left: 20px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+li:hover{
+    background-color: rgb(255, 145, 163);
+}
