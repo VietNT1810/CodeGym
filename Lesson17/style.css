@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+#menu{
+    width: 200px;
+    min-height: 100px;
+    background: rgb(118, 199, 118);
+}
+
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+
+#menu ul li{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+#menu ul li ul{
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    display: none;
+}
+
+#menu ul li:hover ul{
+    display: block;
+}
+
+#menu ul li ul li{
+    background: rgb(255, 194, 204);
+}
+
+#menu ul li:hover{
+    background: rgb(26, 107, 26);
+}
+
+#menu ul li ul li:hover{
+    background: rgb(255, 137, 157);
+}
+
