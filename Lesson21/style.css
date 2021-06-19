@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrap{
+    width: 100%;
+    min-height: 900px;
+    background-color: #7f6f50;
+    background-image: linear-gradient(#7f6f50, #ffffff);
+    background-image: -webkit-linear-gradient(#7f6f50, #ffffff);
+    background-image: -o-linear-gradient(#7f6f50, #ffffff);
+    background-image: -moz-linear-gradient(#7f6f50, #ffffff);
+}
+
+#all{
+    width: 960px;
+    min-height: 1000px;
+    margin: 0 auto;
+    background-color: rgb(87, 149, 211);
+    position: relative;
+    box-shadow: 0px 0px 20px 10px #7d6c4d;
+}
+
+header{
+    width: 100%;
+    height: 318px;
+    background-color: rgb(238, 188, 188);
+    position: relative;
+}
+
+#logo{
+    width: 340px;
+    height: 120px;
+    background-color: #db6516;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
+    position: absolute;
+    left: 10px;
+}
+
+#logo span{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    position: absolute;
+    bottom: 10px;
+}
+
+#carousel{
+    width: 100%;
+    height: 320px;
+    background-color: black;
+}
+
+nav{
+    width: 230px;
+    height: 100%;
+    background-color: #db6516;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+li{
+    width: 100%;
+    height: 40px;
+    color: white;
+    list-style: none;
+    font-size: 17px;
+    line-height: 40px;
+    border-top: 1px solid #95450f;
+    text-align: center;
+}
+
+li:hover{
+    background-color: #95450f;
+}
+
+section{
+    width: 100%;
+    height: 155px;
+    background-color: rgb(217, 240, 188);
+    /* background-image: url("./imgs/headingcong.png"); */
+    /* background-repeat: no-repeat; */
+    position: relative;
+    /* top: -90px; */
+}
+
+section img{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: -90px;
+}
+
+#heading{
+    width: 100%;
+    height: 155px;
+    background-color: #e1c78c;
+    position: absolute;
+}
+
+.heading2{
+    width: 220px;
+    height: 155px;
+    background-color: #e8d3a5;
+    margin: 0 10px;
+    float: left;
+    padding: 0px 20px;
+}
+
+.heading2 h2{
+    color: #db6516;
+}
+
+#content{
+    width: 100%;
+    height: 700px;
+    padding: 10px;
+    position: relative;
+    background-color: #e7e5de;
+    background-image: linear-gradient(#e7e5de, white);
+    background-image: -webkit-linear-gradient(#e7e5de, white);
+    background-image: -o-linear-gradient(#e7e5de, white);
+    background-image: -moz-linear-gradient(#e7e5de, white);
+}
+
+aside{
+    width: 340px;
+    height: 100%;
+    float: left;
+    background-color: white;
+    background-image: linear-gradient(white, grey);
+    background-image: -webkit-linear-gradient(white, grey);
+    background-image: -o-linear-gradient(white, grey);
+    background-image: -moz-linear-gradient(white, grey);
+    padding: 10px;
+    position: relative;
+}
+
+#container{
+    width: 580px;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    padding: 40px;
+}
+
+#container h1{
+    color: #db6516;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+article img{
+    float: left;
+    margin-right: 20px;
+}
+
+.article{
+    width: 500px;
+    height: 87px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.article-text{
+    width: 340px;
+    height: 90px;
+    float: left;
+}
+
+.article-text h2{
+    color: #eda011;
+}
+
+.article-text span{
+    color: #e1c78c;
+}
+
+footer{
+    width: 100%;
+    height: 318px;
+    background: url(./imgs/footer.png) center no-repeat;
+    position: fixed;
+    bottom: 0;
+}
+
+#search-bar{
+    width: 340px;
+    height: 32px;
+    position: fixed;
+    z-index: 1;
+    left: 485px;
+    bottom: 26px;
+}
+
+#search{
+    width: 260px;
+    height: 100%;
+    float: left;
+    border: none;
+    padding-left: 15px;
+    background-color: #e8d3a5;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#search::placeholder{
+    color: black;
+}
+
+#button{
+    width: 77px;
+    height: 100%;
+    float: left;
+    border: none;
+    color: white;
+    background-color: #db6516;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#all > span{
+    position: fixed;
+    color: white;
+    right: 480px;
+    bottom: 35px;
+    z-index: 1;
+}
