@@ -24,6 +24,10 @@
     box-shadow: 0px 0px 20px 10px #7d6c4d;
 }
 
+a{
+    text-decoration: none;
+}
+
 header{
     width: 100%;
     height: 318px;
@@ -42,7 +46,6 @@ header{
 }
 
 #logo span{
-    color: white;
     text-align: center;
     font-size: 38px;
     position: absolute;
@@ -67,7 +70,6 @@ nav{
 li{
     width: 100%;
     height: 40px;
-    color: white;
     list-style: none;
     font-size: 17px;
     line-height: 40px;
@@ -79,8 +81,12 @@ li:hover{
     background-color: #95450f;
 }
 
-#nav-6{
+li:last-child{
     height: 85px;
+}
+
+.text-white, li a{
+    color: white;
 }
 
 section{
@@ -116,8 +122,9 @@ section img{
     padding: 0px 20px;
 }
 
-.heading2 h2{
+.heading2 h2 a{
     color: #db6516;
+    text-shadow: 1px 1px 2px #999;
 }
 
 #content{
@@ -153,11 +160,17 @@ aside{
     padding: 40px;
 }
 
-#container h1{
-    color: #db6516;
+#container h2{
     font-weight: normal;
     margin-bottom: 10px;
 }
+
+#container h2 a{
+    color: #db6516;
+    font-size: 34px;
+    text-shadow: 1px 1px 2px #999;
+}
+
 
 article img{
     float: left;
@@ -177,8 +190,9 @@ article img{
     float: left;
 }
 
-.article-text h2{
+.article-text h3 a{
     color: #eda011;
+    font-weight: normal;
 }
 
 .article-text span{
@@ -193,13 +207,18 @@ footer{
     bottom: 0;
 }
 
-#search-bar{
+#wraper{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 254px;
+}
+
+#wraper form{
     width: 340px;
     height: 32px;
-    position: fixed;
-    z-index: 1;
-    left: 485px;
-    bottom: 26px;
+    position: absolute;
 }
 
 #search{
@@ -226,11 +245,11 @@ footer{
     border-radius: 0px 15px 15px 0px;
 }
 
-#all > span{
-    position: fixed;
+#wraper span{
     color: white;
-    right: 480px;
-    bottom: 35px;
-    z-index: 1;
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
 }
+
 
