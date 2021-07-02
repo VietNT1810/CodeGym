@@ -1,0 +1,63 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+#all{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    /* transition: 2s; */
+}
+
+@font-face {
+    font-family: googlefont1;
+    src: url("./Akaya_Kanadaka/AkayaKanadaka-Regular.ttf");
+}
+
+@font-face {
+    font-family: googlefont2;
+    src: url("./Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+img{
+    width: 600px;
+    height: 600px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+
+#title{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    text-align: center;
+    padding-top: 450px;
+    opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+#title h2{
+    font-family: googlefont1;
+}
+
+#title p{
+    font-family: googlefont2;
+}
+
+#all:hover img{
+    opacity: 0.6;
+}
+
+#all:hover #title{
+    z-index: 2;
+    opacity: 1;
+    padding-top: 350px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần tử giả</title>
+    <style>
+        p::first-line{
+            color: red;
+        }
+
+        p::first-letter{
+            /* font-variant: small-caps; */
+            /* text-transform: uppercase; */
+            font-size: 50px;
+        }
+
+        h1::before{
+            background-image: url("./2000px-Twenty_One_Pilots_Vector_Logo.svg.png");
+            background-repeat: no-repeat;
+            background-size: 50px 50px;
+            display: inline-block;
+            width: 50px; 
+            height: 50px;
+            content:"";
+        }
+
+        h1::after{
+            content: "456";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat corporis. Accusamus sunt saepe iste incidunt ratione consequuntur temporibus asperiores quibusdam quae pariatur distinctio soluta rem similique, quia iusto earum, animi harum mollitia omnis. Sunt accusantium iure voluptatum, modi ea repellat fugit iste expedita at nesciunt sed quis et aperiam omnis quisquam. Similique, dolor debitis! Magni similique eligendi maxime magnam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere atque totam voluptates labore libero, hic quaerat voluptatibus, ratione nesciunt, vel animi assumenda voluptate itaque mollitia ea nostrum amet odit vitae. Corrupti dolorem alias reprehenderit voluptatum vel, magni natus, eaque fuga corporis sit quod iusto ea sed similique quibusdam. Ducimus vel, deleniti veniam dolor voluptatibus debitis sunt. Iusto eum suscipit officiis.</p>
+</body>
+</html>

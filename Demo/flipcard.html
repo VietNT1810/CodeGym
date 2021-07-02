@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip card</title>
+    <style>
+        .container{
+            width: 350px;
+            height: 500px;
+            position: relative;
+            margin: 100px auto;
+            perspective: 1000px; /*Lật 3D*/
+        }
+
+        .card{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: 0.5s;
+        }
+
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+
+        .front{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background-color: rgb(122, 122, 255);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            text-align: center;
+            line-height: 500px;
+            font-size: 100px;
+        }
+
+        .back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background-color: rgb(255, 180, 94);
+            color: white;
+            transform: rotateY(180deg);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            text-align: center;
+            line-height: 500px;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+</body>
+</html>

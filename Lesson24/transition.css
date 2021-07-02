@@ -1,0 +1,30 @@
+
+*{margin: 0px; padding: 0px; position: relative;}
+
+body{
+    background: green;
+}
+
+
+.btn a{
+    box-sizing: border-box;
+    -webkit-text-fill-color: white;
+    text-decoration: none;
+    transition: 3s; 
+}
+
+span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    transition: 3s;
+}
+
+a:hover{
+    color: black;
+}
+
+a:hover span{
+    width: 100%;
+    border-bottom: 1px solid white;
+}

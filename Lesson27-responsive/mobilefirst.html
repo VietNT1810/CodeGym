@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* For mobile first */
+        [class*="col-"]{
+            width: 100%;
+        }
+
+        #center::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #center ul li{
+            float: left;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .col-1{width: 8.3%;}
+            .col-2{width: 16..66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 88.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+            
+            #center ul li{
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="col-12">
+        <header class="col-12" style="background-color: blue;">
+            header 
+        </header>
+        <div id="center">
+            <div class="col-3" style="background-color: brown; float: left;">
+                <ul>
+                    <li>Items 1</li>
+                    <li>Items 2</li>
+                    <li>Items 3</li>
+                    <li>Items 4</li>
+                </ul>
+            </div>
+            <div class="col-9" style="background-color: aqua; float: left;">
+                right
+            </div>
+        </div>
+        <footer style="background-color: tomato;">
+            footer
+        </footer>
+    </div>
+</body>
+</html>

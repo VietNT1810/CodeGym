@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col-1{width: 8.3%;}
+        .col-2{width: 16..66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 88.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+
+        #center::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .floatleft{
+            float: left;
+        }
+        
+        .picture{
+            border: 1px solid black;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .col-3{
+                width: 48%;
+            }
+
+            .picture{
+                margin: 0;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .col-3{
+                width: 100%;
+            }
+
+            .picture{
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="col-12">
+        <h1>Responsive Image Gallery</h1>
+        <p>Resize the browser window to see the effect</p>
+        <div id="center">
+            <div class="col-3 floatleft">
+                <div class="picture">
+                    <img src="./pic.jpg" alt="">
+                    <p>This example use media queries to rearrange the images</p>
+                </div>
+            </div>
+            <div class="col-3 floatleft">
+                <div class="picture">
+                    <img src="./pic.jpg" alt="">
+                    <p>This example use media queries to rearrange the images</p>
+                </div>
+            </div>
+            <div class="col-3 floatleft">
+                <div class="picture">
+                    <img src="./pic.jpg" alt="">
+                    <p>This example use media queries to rearrange the images</p>
+                </div>
+            </div>
+            <div class="col-3 floatleft">
+                <div class="picture">
+                    <img src="./pic.jpg" alt="">
+                    <p>This example use media queries to rearrange the images</p>
+                </div>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id facere maiores pariatur voluptate ex, impedit in ipsum. Beatae dolorem dolorum odio alias facilis maiores laudantium pariatur aspernatur perferendis quam temporibus quidem, aperiam nulla, provident debitis libero consequatur, amet expedita. Dolorum ad sunt, libero non praesentium corrupti aperiam eum veritatis, fugiat beatae, consequuntur explicabo fugit perspiciatis impedit nemo? Autem, repellendus at!</p>
+    </div>
+</body>
+</html>
