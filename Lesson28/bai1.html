@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .wrap{
+        margin: 0 auto;
+        min-height: 100px;
+    }
+    
+    .col-1{width: 8.3%;}
+    .col-2{width: 16..66%;}
+    .col-3{width: 24%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 88.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+
+    .text{
+        float: left;
+    }
+
+    nav{
+        float: left;
+        background-color: rgb(230, 230, 230);
+        margin-right: 1%;
+    }
+
+    nav li{
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        list-style: none;
+    }
+
+    nav li:hover{
+        color: white;
+        background-color: rgb(96, 180, 96);
+    }
+
+    /* nav li:hover:not(.active){
+        background-color: rgb(96, 180, 96);
+    } */
+
+    p{
+        margin: 5px 0;
+    }
+
+    @media only screen and (max-width: 700px){
+        .col-3{
+            width: 100%;
+        }
+
+        li{
+            float: left;
+            padding: 0 10px;
+        }
+        .text{
+            margin: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 400px){
+        .col-3{
+            width: 100%;
+        }
+
+        li{
+            float: none;
+            text-align: center;
+        }
+        .text{
+            margin: 10px;
+        }
+    }
+</style>
+<body>
+    <div class="wrap">
+        <div class="col-12">
+            <nav class="col-3">
+                <ul>
+                    <li class="active">Home</li>
+                    <li>News</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+            <div class="text col-9">
+                <h1>Responsive Sidenav Example</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, itaque quis ex facere delectus dolorem nam animi cupiditate blanditiis sed.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime minima dignissimos doloribus odio autem eveniet repellendus neque tempora, voluptatum quam aspernatur temporibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus a pariatur temporibus!</p>
+                <h2>Resize the browser window to see the effect</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
