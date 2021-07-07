@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="./bai2.css">
+</head>
+<body>
+        <h1>Responsive Form</h1>
+        <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+        <div id="container">
+            <form action="">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="name" id="first-name" placeholder="Your name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="last-name">Last Name</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="name" id="last-name" placeholder="Your last name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-9">
+                        <select name="country" id="country">
+                            <option value="AUS">Australia</option>
+                            <option value="USA">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="VN">Vietnam</option>
+                            <option value="jP">Japan</option>
+                            <option value="KR">Korea</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-9">
+                        <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Write something.."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
