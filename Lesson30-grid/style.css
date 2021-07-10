@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: red;
+}
+
+#main{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+#slidenav{
+    height: 200px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+#slide{
+    background-color: blue;
+    grid-row: span 2;
+}
+
+#green1{
+    background-color: greenyellow;
+}
+
+#yellow1{
+    background-color: yellow;
+}
+
+#news{
+    height: 300px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#left{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#green2{
+    background-color: chartreuse;
+    grid-column: span 2;
+}
+
+#pink1{
+    background-color: rgb(255, 104, 129);
+}
+
+#orange1{
+    background-color: sandybrown;
+}
+
+#right{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#red{
+    background-color: red;
+    grid-row: span 2;
+}
+
+#orange2{
+    background-color: orange;
+}
+
+#green3{
+    background-color: green;
+}
+
+#pink2{
+    background-color: pink;
+    grid-column: span 2;
+}
+
+footer{
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: red;
+}
