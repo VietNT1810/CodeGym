@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#all{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: hsl(0, 0%, 90%);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+/* DESTOP  */
+
+/* ---header--- */
+
+header{
+    background-color: white;
+}
+
+header #text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 145px;
+}
+
+#text *{
+    margin: 10px 0;
+}
+
+#text h1{
+    font-size: 40px;
+}
+
+header nav{
+    width: 100%;
+    height: 30px;
+    background-color: #333333;
+}
+
+header li{
+    list-style: none;
+    float: left;
+    height: 30px;
+    color: white;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+header li:last-child{
+    float: right;
+}
+
+/* ---content--- */
+
+#content{
+    display: grid;
+    grid-template-columns: 70% calc(30% - 10px);
+    grid-gap: 10px;
+}
+
+/* #content #left{
+    width: 100%;
+    float: left;
+} */
+
+#left .title-heading{
+    background-color: white;
+    padding: 10px;
+}
+
+#left .title-heading *{
+    margin: 10px 0;
+}
+
+#left .title-heading img{
+    width: 100%;
+    height: 300px;
+}
+
+/* #content #right{
+    width: calc(30% - 10px); /* fit Width 30% với margin-left 10px  */
+    /* float: left;
+    margin-left: 10px;
+} */ 
+
+#right .about, .popular, .follow{
+    background-color: white;    
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#right .about *, .popular *, .follow *{
+    margin: 10px 0;
+} 
+
+#right .about img{
+    width: 100%;
+}
+
+#right .popular img{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+
+/* --footer-- */
+footer{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+}
+
+/* TABLET */
+@media only screen and (max-width: 768px){
+    #content{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 425px){
+    header nav{
+        height: auto;
+    }
+
+    header li{
+        float: none;
+        text-align: center;
+    }
+
+    header li:last-child{
+        float: none;
+    }
+
+    #content{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+}
