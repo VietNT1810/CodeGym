@@ -1,0 +1,25 @@
+.flex-container{
+    width: 500px;
+    background: pink;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
+    flex-flow: row-reverse wrap;
+}
+
+.flex-container *{
+    background: hsl(204, 100%, 50%);
+    margin: 20px;
+    width: 20%; 
+}
+
+/* @media only screen and (max-width: 600px)
+{
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+    }
+} */
