@@ -179,6 +179,10 @@ header .searchbar .bi-search{
     padding-left: 30px;
 }
 
+.ingredients hr{
+    margin: 10px auto;
+}
+
 .instructions{
     line-height: 30px;
 }
