@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./restaurant.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- --header-- -->
+        <div class="header-stick">
+            <header>
+                <div class="container">
+                    <div id="logo">
+                        <span><a href="./trangchu.html">THE CHEF</a></span>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./about.html">ABOUT ME</a></li>
+                            <li><a href="./restaurant.html">RESTAURANT</a>
+                                <ul>
+                                    <li><a href="./restaurant.html">RESTAURANT 1</a></li>
+                                    <li><a href="./restaurant.html">RESTAURANT 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./recipes.html">RECIPES</a>
+                                <ul>
+                                    <li><a href="./recipes.html">CHICKEN RECIPES</a></li>
+                                    <li><a href="./recipes.html">BEEF RECIPES</a></li>
+                                    <li><a href="./recipes.html">VEGETARIAN RECIPES</a></li>
+                                    <li><a href="./recipes.html">DRINK RECIPES</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">VIDEO</a></li >
+                        </ul>
+                    </div>
+                    <div class="searchbar">
+                        <input type="text" required>
+                        <button><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- --content-- -->
+        <div class="content">
+            <!-- --CAROUSEL-- -->
+            <div class="slider">
+                <figure>
+                    <img src="../imgs/restaurant2.jpg" alt="">
+                    <img src="../imgs/restaurant1.jpg" alt="">
+                    <img src="../imgs/restaurant3.jpg" alt="">
+                    <img src="../imgs/restaurant2.jpg" alt="">
+                </figure>
+            </div>
+            <!-- --BOOKING-- -->
+            <div class="booking">
+                <div class="booking-cate">
+                    <div class="booking-box">
+                        <a href="#booknow">
+                            <img src="../imgs/restaurant-book1.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="inner">
+                                <h2>Restaurant 1</h2>
+                                <h3>Restaurant 1</h3>
+                                <p>Book now
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="booking-box">
+                        <a href="#booknow">
+                            <img src="../imgs/restaurant-book2.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="inner">
+                                <h2>Restaurant 2</h2>
+                                <h3>Restaurant 2</h3>
+                                <p>Book now
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="booking-box">
+                        <a href="#booknow">
+                            <img src="../imgs/restaurant-book3.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="inner">
+                                <h2>Restaurant 3</h2>
+                                <h3>Restaurant 3</h3>
+                                <p>Book now
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="booking-box">
+                        <a href="#booknow">
+                            <img src="../imgs/restaurant-book4.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="inner">
+                                <h2>Restaurant 4</h2>
+                                <h3>Restaurant 4</h3>
+                                <p>Book now
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="booking-box">
+                        <a href="#booknow">
+                            <img src="../imgs/restaurant-book5.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="inner">
+                                <h2>Restaurant 5</h2>
+                                <h3>Restaurant 5</h3>
+                                <p>Book now
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="booking-box">
+                        <a href="#booknow">
+                            <img src="../imgs/restaurant-book6.jpg" alt="">
+                            <div class="overlay"></div>
+                            <div class="inner">
+                                <h2>Restaurant 6</h2>
+                                <h3>Restaurant 6</h3>
+                                <p>Book now
+                                    <i class="bi bi-arrow-right-short"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --BOOK-TABLE-- -->
+            <div class="book-table" id="booknow">
+                <h1>Book a Table</h1>
+                <hr>
+                <div class="table">
+                    <div class="small-table">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h2>BOOK A TABLE</h2>
+                            <hr>
+                            <h3>CHECK AVAILABILITY & BOOK NOW (UP TO 12 GUESTS)</h3>
+                        </div>
+                        <form>
+                            <select name="restaurant" required>
+                                <option value="">*Restaurant</option>
+                                <option value="">Restaurant 1</option>
+                                <option value="">Restaurant 2</option>
+                                <option value="">Restaurant 3</option>
+                            </select>
+                            <input type="date" name="" id="" required>
+                            <input type="time" name="" id="" required>
+                            <select name="party-size" required>
+                                <option value="partysize">*Party size</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                            </select>
+                            <button type="submit">BOOK NOW</button>
+                        </form>
+                    </div>
+                    <div class="group-table">
+                        <div class="overlay"></div>
+                        <div class="text">
+                            <h2>GROUP BOOKINGS</h2>
+                            <hr>
+                            <h3>SEND US AN ENQUIRY FOR BOOKINGS OF 13+</h3>
+                        </div>
+                        <form>
+                            <select name="restaurant" required>
+                                <option value="">*Restaurant</option>
+                                <option value="">Restaurant 1</option>
+                                <option value="">Restaurant 2</option>
+                                <option value="">Restaurant 3</option>
+                            </select>
+                            <input type="text" name="f-name" placeholder="*First name" required>
+                            <input type="text" name="l-name" placeholder="*Last name" required>
+                            <input type="email" name="email" id="" placeholder="*Email address" required>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required>
+                            <input type="date" name="" id="" required>
+                            <input type="time" name="" id="" required>
+                            <select name="party-size" required>
+                                <option value="partysize">*Party size</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                            </select>
+                            <button type="submit">BOOK NOW</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --FOOTER-- -->
+        <footer>
+            <div class="container">
+                &copy; 2021 The Chef.
+                <div class="social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

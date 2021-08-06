@@ -1,5 +1,9 @@
 *{margin: 0; padding: 0; box-sizing: border-box; font-family: myFont, sans-serif;}
 
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: myFont;
     src: url(../fonts/Poppins-Regular.ttf);
@@ -264,7 +268,8 @@ h1,h2,h4{
     padding-top: 380px;
     opacity: 0;
     z-index: 0;
-    -webkit-transition: 1s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #009688);
+    -webkit-transition: 2s;
     -moz-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
@@ -289,6 +294,10 @@ h1,h2,h4{
     opacity: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
     z-index: 2;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 .testimonial-container{

@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    width: 1903px;
+    min-height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+html a{
+    text-decoration: none;
+    color: white;
+}
+
+h1,h2,h3,h5{
+    font-weight: normal !important;
+}
+
+/* --HEADER-- */
+.header-stick{
+    width: 100%;
+    min-height: 80px;
+    position: relative;    
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #62A5A1;
+    position: fixed;
+    z-index: 2;
+}
+
+header .container{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0;
+}
+
+header #logo{
+    flex-basis: 20%;
+    text-align: left;
+    font-family: 'Playball', cursive !important;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+header .menu > ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .menu ul li a{
+    position: relative;
+    color: white;
+    height: 100%;
+    padding: 30px 10px 25px 10px;
+}
+
+header .menu ul li a::after{
+    transition: all .5s;
+}
+
+header .menu ul li a::after{
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #B54484;
+    height: 4px;
+}
+
+header .menu ul li a:hover::after{
+    width: 100%;
+}
+
+header .menu li ul{
+    display: none;
+    width: 200px;
+    background-color: #62A5A1;
+    position: absolute;
+    top: 49px;
+    text-align: left;
+    padding: 0;
+}
+
+header .menu li ul li a::after{
+    content: none;
+}
+
+header .menu li ul li{
+    list-style: none;
+    line-height: 50px;
+}
+
+header .menu li ul li:hover{
+    background-color: hsl(175, 71%, 73%);
+}
+
+header .menu ul li:hover ul{
+    display: block;
+    z-index: 2;
+}
+
+header .searchbar{
+    width: 360px;
+    height: 30px;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header .searchbar input{
+    height: 100%;
+    flex-basis: 330px;
+    border-radius: 5px;
+    border: none;
+}
+
+.searchbar button{
+    flex-basis: 30px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header .searchbar .bi-search{
+    align-self: center;
+    height: 25px;
+    color: #62A5A1;
+}
+
+/* --CONTENT-- */
+.content{
+    width: 100%;
+    height: 2930px;
+    background-color: #F8F8F8;
+}
+
+/* --SLIDER-- */
+.content .slider{
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content .slider figure{
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+    z-index: 0;
+}
+
+.content .slider figure img{
+    width: 25%;
+    height: 500px;
+    float: left;
+}
+
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+
+    14%{
+        left: 0;
+    }
+
+    28%{
+        left: -100%;
+    }
+
+    42%{
+        left: -100%;
+    }
+
+    56%{
+        left: -200%;
+    }
+
+    70%{
+        left: -200%;
+    }
+
+    90%{
+        left: -300%;
+    }
+
+    100%{
+        left: -300%;
+    }
+}
+
+/* --booking-- */
+.booking{
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    background-color: #D9F9F1;
+}
+
+.booking-cate{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: #D9F9F1;
+    margin: 0 auto;
+}
+
+.booking-box{
+    width: 494px;
+    position: relative;
+}
+
+.booking-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(16,16,16,0.6);
+    opacity: 1;
+    top: 0;
+    transition: opacity 0.5s linear;
+}
+
+.booking-box:hover .overlay{
+    opacity: 0.5;
+}
+
+.inner{
+    width: 100%;
+    height: 50%;
+    color: white;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inner h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold !important;
+}
+
+.inner h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.inner p{
+    width: 280px;
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #477774;
+    top: 100px;
+    text-transform: none;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: left;
+    transition: background-color 0.5s linear;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inner p:hover{
+    background-color: #62a8a4;
+    
+}
+
+.inner .bi-arrow-right-short{
+    position: absolute;
+    font-size: 40px;
+    right: 5px;
+    top: 5px;
+}
+
+/* --book table-- */
+.book-table{
+    width: 80%;
+    min-height: 200px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.book-table h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    color: #07564d;
+}
+
+.book-table > hr{
+    width: 15%;
+    border: 5px solid #62A5A1;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.table{
+    width: 1520px;
+    min-height: 500px;
+    display: flex;
+}
+
+/* .table *{
+    flex-basis: 760px;
+} */
+
+.table .text{
+    width: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 25%;
+}
+
+.text h2{
+    font-size: 30px;
+}
+
+.text hr{
+    width: 30%;
+    border: 5px solid white;
+    margin: 20px auto;
+}
+
+.small-table{
+    width: 100%;
+    background-image: url('../imgs/table.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.group-table{
+    width: 100%;
+    background-image: url('../imgs/table-group.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.small-table .overlay, .group-table .overlay{
+    width: 760px;
+    height: 350px;
+    position: absolute;
+    opacity: 1;
+}
+
+.small-table form{
+    width: 100%;
+    height: 850px;  
+    position: absolute;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #66e0d933;
+}
+
+.group-table form{
+    width: 100%;
+    height: 850px;  
+    position: absolute;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #66e0d952;
+}
+
+form *{
+    width: 80%;
+    height: 60px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border: 1px solid #62A5A1;
+    border-radius: 4px;
+    box-shadow: 0px 5px 0px 0px #a3ded6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form button[type=submit]{
+    width: 40%;
+    color: white;
+    background-color: #62a5a1;
+}
+
+form select:first-child{
+    margin-top: 50px;
+}
+
+/* --FOOTER-- */
+footer{
+    background-color: #62A5A1;
+    color: white;
+    line-height: 60px;
+    position: relative;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.social{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.social a:hover{
+    color: #1e282f;
+}
