@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header-stick{
+    width: 100%;
+    height: 60px;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: pink;
+    position: fixed;
+}
+
+header > ul{
+    width: 100%;
+    height: 60px;
+    list-style: none;
+    display: flex;
+}
+
+header ul li{
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+
+header > ul > li:last-child{
+    margin-left: auto;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+}
+
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+header ul li a:hover{
+    color: black;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+ 
+header li ul{
+    width: 100px;
+    background-color: pink;
+    list-style: none;
+    display: none;
+}
